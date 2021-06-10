@@ -98,7 +98,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -109,6 +109,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 0.6s;
 }
 
 #badge p {
@@ -149,6 +150,34 @@ h3 {
 }
 .giraffe p:first-of-type {
   font-size: 1.2em;
+}
+
+.dinosaur {
+  background-color: #1c572e;
+  color: #ffffff;
+}
+
+.dinotable, th {
+border-color: #fff;
+border-radius: 10px;
+border: 1px solid;
+padding-right: 5px;
+padding-left: 5px;
+margin:auto;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+.dinosaur > h2 {
+  color: #ffffff;
+}
+
+.dinosaur > h3 {
+  color: yellow;
+  font-size: 1.3em;
 }
 
 .card {
@@ -193,6 +222,20 @@ h3 {
   max-width: 400px;
 }
 
+.education-container > button{
+  font-size: 1.5em;
+  border-radius: 20px;
+}
+
+.education-container > button:hover {
+  background-color: #50e776;
+}
+
+.education-container > button:focus {
+  background-color: #50e776;
+}
+
+
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
@@ -218,5 +261,6 @@ h3 {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  width: 25%;
 }
