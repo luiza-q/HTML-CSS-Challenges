@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height: 30px;
 }
 
 header {
@@ -30,7 +31,11 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 5px solid #4300c0;
+}
+
+#logo {
+  border: 0px;
 }
 
 h1,
@@ -44,15 +49,22 @@ h5 {
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 175%;
 }
 
 h2 {
   font-size: 175%;
+  color: #6320ee;
 }
 
 h3 {
-  font-size: 150%;
+  font-size: 175%;
+  color: #6320ee;
+}
+
+.tigers > h2,
+h3 {
+  color: #50e776;
 }
 
 button {
@@ -76,6 +88,7 @@ footer {
 }
 
 .introduction {
+  background: white;
 }
 
 #badge {
@@ -85,7 +98,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,6 +109,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 0.6s;
 }
 
 #badge p {
@@ -105,11 +119,19 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+}
+.bear1 {
+  border: 5px solid #25e707b0;
+}
+.bear2 {
+  border: 5px solid #e71607b0;
+}
+.bear3 {
+  border: 5px solid #4a07e7b0;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .tigers {
@@ -118,12 +140,44 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483c46;
+  color: #beee62;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2,
+h3 {
+  color: #f4743b;
+}
+.giraffe p:first-of-type {
+  font-size: 1.2em;
+}
+
+.dinosaur {
+  background-color: #1c572e;
+  color: #ffffff;
+}
+
+.dinotable, th {
+border-color: #fff;
+border-radius: 10px;
+border: 1px solid;
+padding-right: 5px;
+padding-left: 5px;
+margin:auto;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+.dinosaur > h2 {
+  color: #ffffff;
+}
+
+.dinosaur > h3 {
+  color: yellow;
+  font-size: 1.3em;
 }
 
 .card {
@@ -168,6 +222,20 @@ footer {
   max-width: 400px;
 }
 
+.education-container > button{
+  font-size: 1.5em;
+  border-radius: 20px;
+}
+
+.education-container > button:hover {
+  background-color: #50e776;
+}
+
+.education-container > button:focus {
+  background-color: #50e776;
+}
+
+
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
@@ -178,6 +246,8 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin: auto;
 }
 
 .membership h2 {
@@ -191,5 +261,6 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  width: 25%;
 }
